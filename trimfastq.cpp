@@ -1,3 +1,21 @@
+/*
+  thorfinn@binf.ku.dk
+  program to trim the readpart of a fastq to 100
+
+  input:
+  uncompressed fastq file
+
+  output:
+  trimmed and compressed fastq file
+
+  compile:
+  g++ trimfastq.cpp -O3 -lz -o trimfastq
+
+  example
+  gunzip -c test.fastq.gz|./trimfastq >test.fastq.trimmed.gz
+
+ */
+
 #include <cstdio>
 #include <cstdlib>
 #include <zlib.h>
